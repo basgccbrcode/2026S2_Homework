@@ -11,6 +11,7 @@ public class Lesson05 {
 		// enter your subject
 		
 		System.out.println("enter your score:");
+		int score = scanner.nextInt();
 	}
 
 }
