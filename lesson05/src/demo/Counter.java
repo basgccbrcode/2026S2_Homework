@@ -16,7 +16,15 @@ public class Counter {
 			if (i == 14) {
 				break;
 			}
+			
 		}
+		
+		int gCount = 0;
+		do {
+			System.out.println("Goodbye July!"+gCount);
+			++gCount;
+		} while (gCount == 2);
+		
 		System.exit(0);
 	}
 
