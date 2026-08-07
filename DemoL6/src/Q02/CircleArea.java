@@ -2,7 +2,7 @@ package Q02;
 
 public class CircleArea {
 
-	public static void print(int intToPrint) {
+	public static void print(double intToPrint) {
 		System.out.println(intToPrint);
 	}
 		
