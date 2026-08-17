@@ -22,9 +22,7 @@ public class Book {
 		Book b3 = new Book("War and Peace", "Leo Tolstoy");
 
 		
-		Book[] books = { book1,
-				 book2,
-				 book3};
+		Book[] books = {book b1, book b2, book b3};
 
 for (Book b: books) {
 	b.display();
