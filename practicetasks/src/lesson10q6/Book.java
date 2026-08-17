@@ -12,7 +12,7 @@ public class Book {
 	
 
 	public void display() {
-		System.out.print("%-30s by: %24s\n", this.title, this.author);
+		System.out.printf("%-30s by: %24s\n", this.title, this.author);
 	}
 	
 	
@@ -22,7 +22,9 @@ public class Book {
 		Book b3 = new Book("War and Peace", "Leo Tolstoy");
 
 		
-		Book[] books = {book b1, book b2, book b3};
+		Book[] books = {b1, 
+						b2, 
+						b3};
 
 for (Book b: books) {
 	b.display();
