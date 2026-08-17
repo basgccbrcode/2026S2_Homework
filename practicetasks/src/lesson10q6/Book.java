@@ -8,9 +8,9 @@ public class Book {
 	
 	
 	public static void main(String[] args) {
-		Book b1 = new Book("", "");
-		Book b2 = new Book("", "");
-		Book b3 = new Book("", "");
+		Book b1 = new Book("Harry Potter", "Rowling");
+		Book b2 = new Book("The Hobbit", "Tolkien");
+		Book b3 = new Book("War and Peace", "Leo Tolstoy");
 
 	}
 
