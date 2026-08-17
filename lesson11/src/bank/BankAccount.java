@@ -30,7 +30,7 @@ public class BankAccount {
 			throw new InvalidAccountRequestException("Excessive withdrawal!");
 		this.balance -= request;
 	}
-	   public static void main(String[] args) {
+	   public void main(String[] args) {
 	   name = "Sebastian";
 	   balance= 5;
 	   }}
