@@ -15,13 +15,13 @@ public class MathUtil {
 	}
 
 	public static void main(String[] args) {
-		int sum = MathUtil.add(8, 0);
+		int sum = MathUtil.add(8, 1);
 		int diff = MathUtil.subtract(8, 1);
 		int prod = MathUtil.multiply(8, 1);
 		
 		System.out.println("Sum: " + sum);
-		System.out.println("Difference between 8 and 0: " + diff);
-		System.out.println("8 times 1: " + prod);
+		System.out.println("Difference between 8 and 1: " + diff);
+		System.out.println("Product of 8 times 1: " + prod);
 	}
 	
 }
