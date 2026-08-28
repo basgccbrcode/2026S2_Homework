@@ -1,18 +1,23 @@
 package assignments;
 
-public class DuelistCharacters implements Duelist {
+public class Bas implements Duelist {
 	
 	private String StudentName = "Bas";
 	private String Weapon = "stick";
 	
 	private String RandomSeed = "0195659";
-	private int Health = "10";
+	private int Health = 10;
 	private int Magic = "100";
 	private int Strength = "5";
 	
 	private int BattleCry = "we must die";
 	private int SpecialMove = "stick injure u";
 	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
 
 	@Override
 	public String getStudentName() {
