@@ -9,7 +9,7 @@ public class StaticDemo {
 	}
 	
 	public static void voidShowCounter(String[] args) {
-		System.out.printf("you have %d instances in play!\n", args);
+		System.out.printf("you have %d instances in play!\n", counter);
 	}
 	
 	public static void main(String[] args) {

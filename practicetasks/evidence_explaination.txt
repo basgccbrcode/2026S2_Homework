@@ -1,0 +1,1 @@
+* According to dev.to, static fields in Java contribute to memory leaks. However, static methods can not be used for inheritance.
