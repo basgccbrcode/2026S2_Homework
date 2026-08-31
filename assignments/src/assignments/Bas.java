@@ -7,11 +7,11 @@ public class Bas implements Duelist {
 	
 	private String RandomSeed = "0195659";
 	private int Health = 10;
-	private int Magic = "100";
-	private int Strength = "5";
+	private int Magic = 100;
+	private int Strength = 5;
 	
-	private int BattleCry = "we must die";
-	private int SpecialMove = "stick injure u";
+	private String BattleCry = "we must die";
+	private String SpecialMove = "stick injure u";
 	
 	
 	public static void main(String[] args) {
