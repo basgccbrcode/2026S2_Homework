@@ -1,5 +1,5 @@
 Static members in Java belong to a class and not a specific method, while each object has a different instance.
 
-* utility classes are best used to improve static methods (example: mathutil).
+* utility classes are best used to improve static methods (example: MathUtil).
 
 Static variables represent a global state.

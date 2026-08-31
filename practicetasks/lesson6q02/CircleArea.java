@@ -1,4 +1,4 @@
-package Q02;
+package lesson6q02;
 
 public class CircleArea {
 
