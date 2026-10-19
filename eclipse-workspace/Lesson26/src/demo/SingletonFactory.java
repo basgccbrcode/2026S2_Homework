@@ -31,6 +31,7 @@ public class SingletonFactory {
 			public void log(String message) {
 				System.out.println(message);
 			}
+		}
 			
 			private static class LabelledLogger implements Logger {
 				 private final String component;
@@ -41,7 +42,7 @@ public class SingletonFactory {
 				
 				@Override
 				public void log(String message) {
-					System.out.println("Shop" + message);
+					System.out.println(component + message);
 				}
 		}
 			
@@ -64,4 +65,3 @@ public class SingletonFactory {
 		        logger.log(second.getApplicationName() + " shops opened");
 			} 		
 }
-	}
