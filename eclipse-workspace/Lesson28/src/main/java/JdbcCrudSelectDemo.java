@@ -36,14 +36,16 @@ public class JdbcCrudSelectDemo {
 				}
 			}
 			
-			/*
-			 * // Rewrite this code to use PreparedStatements
-			 * System.out.println("-- Show more expensive than ten dollars"); try(Statement
-			 * st = conn.createStatement(); ResultSet rs = st.executeQuery(
-			 * "SELECT id, title, author, price " +
-			 * "FROM comics WHERE price > 10 ORDER BY price, id")) { while (rs.next()) {
-			 * printRow(rs); } }
-			 */
+			// Rewrite this code to use PreparedStatements
+			System.out.println("-- Show more expensive than ten dollars");
+			try(Statement st = conn.createStatement();
+					ResultSet rs = st.executeQuery(
+							"SELECT id, title, author, price " +
+					        "FROM comics WHERE price > 10 ORDER BY price, id")) {
+				while (rs.next()) {
+					printRow(rs);
+				}
+			}
 
 		} catch (SQLException e) {
 			e.printStackTrace();
