@@ -12,7 +12,7 @@ public class JavaFxCounterDemo extends Application {
 
     @Override
     public void start(Stage stage) {
-        Label countLabel = new Label("Clicks: 0");
+        Label countLabel = new Label("Clicks multipiler: 0");
         Label countMultiplier = new Label("Clicks multiplier: 4");
         Button countButton = new Button("Click me");
         countButton.setOnAction(event -> {
