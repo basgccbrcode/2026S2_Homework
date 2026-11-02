@@ -140,7 +140,7 @@ public class LearningSupport extends Application {
                 temperatureSlider,
                 adjustControls,
                 temperatureLabel,
-                new Label("Display unit"),
+                new Label("Type of work"),
                 unitControls,
                 new Label("Date for this reading"),
                 recordControls,
