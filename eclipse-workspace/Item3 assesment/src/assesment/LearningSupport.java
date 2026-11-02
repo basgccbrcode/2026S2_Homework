@@ -136,7 +136,7 @@ public class LearningSupport extends Application {
 
             root = new VBox(
                 12,
-                new Label("Slide to set a temperature in °C"),
+                new Label("Find LSA's"),
                 temperatureSlider,
                 adjustControls,
                 temperatureLabel,
