@@ -25,11 +25,11 @@ import javafx.stage.Stage;
 public class LearningSupport extends Application {
     @Override
     public void start(Stage stage) {
-        ThermometerModel model = new ThermometerModel();
-        ThermometerView view = new ThermometerView();
-        new ThermometerController(model, view);
+        LearningGoal goal = new LearningGoal();
+        EvidenceEntry view = new EvidenceEntry();
+        new ThermometerController(goal, view);
 
-        stage.setTitle("Thermometer — MVC warm-up");
+        stage.setTitle("Learning Support App");
         stage.setScene(new Scene(view.root, 480, 510));
         stage.show();
     }
@@ -48,8 +48,8 @@ public class LearningSupport extends Application {
         }
     }
 
-    /** Model: stores temperature and readings. */
-    private static final class ThermometerModel {
+    /** Goals: stores goals and readings. */
+    private static final class LearningGoal {
         private final List<Reading> readings = new ArrayList<>();
         private double celsius = 20.0;
         private TemperatureUnit unit = TemperatureUnit.CELSIUS;
@@ -108,7 +108,7 @@ public class LearningSupport extends Application {
         }
     }
 
-    private static final class ThermometerView {
+    private static final class EvidenceEntry {
         private final VBox root;
         private final Slider temperatureSlider = new Slider(-40, 100, 20);
         private final Label temperatureLabel = new Label();
@@ -120,7 +120,7 @@ public class LearningSupport extends Application {
         private final ListView<Reading> readingList = new ListView<>();
         private final Label statusLabel = new Label();
 
-        private ThermometerView() {
+        private EvidenceEntry() {
             temperatureSlider.setShowTickLabels(true);
             temperatureSlider.setShowTickMarks(true);
             temperatureSlider.setMajorTickUnit(20);
@@ -162,16 +162,16 @@ public class LearningSupport extends Application {
     }
 
     private static final class ThermometerController {
-        private final ThermometerModel model;
-        private final ThermometerView view;
+        private final LearningGoal goal;
+        private final EvidenceEntry view;
 
-        private ThermometerController(ThermometerModel model, ThermometerView view) {
-            this.model = model;
+        private ThermometerController(LearningGoal goal, EvidenceEntry view) {
+            this.goal = goal;
             this.view = view;
 
             view.temperatureSlider.valueProperty().addListener(
                 (observable, oldValue, newValue) -> {
-                    model.setCelsius(newValue.doubleValue());
+                    goal.setCelsius(newValue.doubleValue());
                     refreshDisplay();
                 }
             );
@@ -205,7 +205,7 @@ public class LearningSupport extends Application {
         }
 
         private void refreshDisplay() {
-            view.temperatureLabel.setText(model.displayedTemperature());
+            view.temperatureLabel.setText(goal.displayedTemperature());
         }
     }
 }
